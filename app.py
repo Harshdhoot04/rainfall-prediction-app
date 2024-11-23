@@ -10,7 +10,7 @@ from imblearn.over_sampling import RandomOverSampler
 @st.cache(allow_output_mutation=True)
 def prepare_model():
     # Load the dataset
-    df = pd.read_csv('/Rainfall.csv')
+    df = pd.read_csv('Rainfall.csv')
     
     # Data preprocessing
     df.replace({'yes': 1, 'no': 0}, inplace=True)
